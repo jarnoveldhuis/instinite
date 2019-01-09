@@ -6,13 +6,21 @@ var level = -1;
 var cycle = 0;
 
 
-$("body").keypress(function() {
+$("body").click(function() {
   if (level < 0) {
     gamePattern = [];
     userClickedPattern = [];
     level++;
     nextSequence();
-
+    $(".btn").click(function() {
+      userChosenColour = $(this).attr("id");
+      animatePress(userChosenColour);
+      playSound(userChosenColour);
+      userClickedPattern.push(userChosenColour);
+      console.log(userClickedPattern);
+      // userChosenColour="wait";
+      matchSequence();
+    });
   }
 });
 
@@ -70,15 +78,7 @@ function nextSequence() {
   // matchSequence();
 }
 
-$(".btn").click(function() {
-  userChosenColour = $(this).attr("id");
-  animatePress(userChosenColour);
-  playSound(userChosenColour);
-  userClickedPattern.push(userChosenColour);
-  console.log(userClickedPattern);
-  // userChosenColour="wait";
-  matchSequence();
-});
+
 
 //
 //
