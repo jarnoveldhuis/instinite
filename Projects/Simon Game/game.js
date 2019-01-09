@@ -112,7 +112,7 @@ function matchSequence() {
       gameOver(userChosenColour);
       userChosenColour = "wait";
       wrong();
-      $("h1").text("Game Over, Press Click Anywhere to Restart");
+      $("h1").text("Game Over, Click to Restart");
       setTimeout(function() {
         level = -1;
       }, 100);
