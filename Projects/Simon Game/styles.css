@@ -17,13 +17,10 @@ footer {
   color: #FEF2BF;
 }
 
-
-
 .container {
   display: block;
   width: 50%;
   margin: auto;
-
 }
 
 .btn {
@@ -36,24 +33,35 @@ footer {
 }
 
 .game-over {
-  background-color: red;
-  opacity: 0.8;
+  background-color: black;
+  background-image: url("Images/LiLi.png");
+  background-size: 100% 100%;
+  z-index: 1;
 }
 
 .red {
   background-color: red;
+  background-image: url("Images/Macks.png");
+  background-size: 100% 100%;
 }
 
 .green {
   background-color: green;
+  background-image: url("Images/Mike.png");
+  background-size: 100% 100%;
 }
 
 .blue {
   background-color: blue;
+  background-image: url("Images/Nick.png");
+  background-size: 100% 100%;
 }
 
 .yellow {
   background-color: yellow;
+  background-image: url("Images/Piero.png");
+  background-size: 100% 100%;
+
 }
 
 .pressed {
