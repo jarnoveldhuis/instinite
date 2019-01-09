@@ -6,13 +6,13 @@ var level = -1;
 var cycle = 0;
 
 
-$("body").click(function() {
+$("body").on('click touch', function () {
   if (level < 0) {
     gamePattern = [];
     userClickedPattern = [];
     level++;
     nextSequence();
-    $(".btn").click(function() {
+    $(".btn").on('click touch', function () {
       userChosenColour = $(this).attr("id");
       animatePress(userChosenColour);
       playSound(userChosenColour);
@@ -23,7 +23,6 @@ $("body").click(function() {
     });
   }
 });
-
 
 
 
@@ -112,7 +111,7 @@ function matchSequence() {
       gameOver(userChosenColour);
       userChosenColour = "wait";
       wrong();
-      $("h1").text("Game Over, Click to Restart");
+      $("h1").text("Game Over, Press Anywhere to Restart");
       setTimeout(function() {
         level = -1;
       }, 100);
