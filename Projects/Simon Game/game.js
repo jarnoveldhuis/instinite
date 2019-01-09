@@ -48,7 +48,7 @@ function animateSequence(counter) {
         playSound(gamePattern[counter]);
         counter++;
         animateSequence(counter);
-      }, 750);
+      }, 1250);
     }
     console.log(gamePattern);
     matchSequence();
@@ -111,9 +111,15 @@ function matchSequence() {
       userClickedPattern = [];
       gameOver(userChosenColour);
       userChosenColour = "wait";
-      level = -1;
-      $("h1").text("Game Over, Press Any Key to Restart");
       wrong();
+      $("h1").text("Game Over, Press Click Anywhere to Restart");
+      setTimeout(function() {
+        level = -1;
+      }, 100);
+
+
+
+
 
     }
     userChosenColour="wait";
