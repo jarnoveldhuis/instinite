@@ -13,7 +13,7 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  font-size: 5rem;
+  font-size: 1.25rem;
   color: #333;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
