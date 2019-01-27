@@ -21,7 +21,7 @@ function drums(){
 
 function wholesomeFamilyGame(){
   document.querySelector("p").innerHTML =
-  "<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br>A ridiculous modification of a Simon says type game I made for my friends.";
+  "<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br>A ridiculous game I made for my friends.";
 
   document.querySelector(".btn").outerHTML = "<a href='Projects/Simon Game/index.html' class='btn btn-lg btn-secondary info'>Try it</a>";
 }
