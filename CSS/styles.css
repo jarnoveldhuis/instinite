@@ -10,8 +10,9 @@
 }
   h1 {
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    padding-bottom: 40px;
+    font-family: 'Monoton', cursive;
+    padding-bottom: 0px;
+    font-size: 75px;
   }
 
   input {
