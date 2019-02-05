@@ -7,7 +7,7 @@ function moreInfo(){
 
 function pig(){
   document.querySelector("p").innerHTML =
-  "<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h1>Pig</h1><br>A simple game of chance. Each round, roll the dice to accumalate points for your Round Score. If you get doubles, your Round Score will be wiped out and your turn will be over. Click Hold to commit your score for the round to your total score for the game.";
+  "<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h1>Pig</h1><br>A simple game of chance against a computerized opponent. Each round, roll the dice to accumalate points for your Round Score. If you get doubles, your Round Score will be wiped out and your turn will be over. Click Hold to end your turn before this happens.";
 
   document.querySelector(".btn").outerHTML = "<a href='Projects/Pig/index.html' class='btn btn-lg btn-secondary info'>Try it</a>";
 }
@@ -21,14 +21,14 @@ function drums(){
 
 function wholesomeFamilyGame(){
   document.querySelector("p").innerHTML =
-  "<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h1>WHOLESEOME FAMILY GAME</h1><br>A ridiculous game I made for my friends.";
+  "<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h1>LAZER BRAIN</h1><br>A ridiculous take on Simon Says filled with inside jokes for my friends.";
 
   document.querySelector(".btn").outerHTML = "<a href='Projects/Simon Game/index.html' class='btn btn-lg btn-secondary info'>Try it</a>";
 }
 
 function toDoList(){
   document.querySelector("p").innerHTML =
-  "<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h1>ToDo List</h1><br>An app that keeps track of things to do. I read that the internet needs more of these.";
+  "<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h1>TODO List</h1><br>An app that keeps track of things to do. I read that the internet needs more of these.";
 
   document.querySelector(".btn").outerHTML = "<form class='form' autocomplete='off' onsubmit='createList()'><div class='form-group row'><label for='listName' class='col-sm-4 col-form-label'>Name your list:</label><div class='col-sm-4'><input type='text' class='form-control' id='inputName' placeholder='List Name'></div><div class='col-sm-3'><button type='submit' id='submitButton' class='btn btn-primary'>Create List</button></div></form>";
 }
