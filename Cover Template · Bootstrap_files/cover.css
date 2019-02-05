@@ -230,7 +230,8 @@ h1 {
   color: white;
   font-family: 'Monoton', cursive;
   padding-bottom: 0px;
-  font-size: 75px;
+  font-size: 100px;
+  font-weight:10;
 }
 
 input {
