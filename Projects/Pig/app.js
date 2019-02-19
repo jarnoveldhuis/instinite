@@ -56,15 +56,15 @@ function computer() {
 
   if (gamePlaying && activePlayer === 1) {
     if (roundScore < goal) {
-      setTimeout(function () {
-          roll();
-          // create a recursive loop.
-          computer();
+      setTimeout(function() {
+        roll();
+        // create a recursive loop.
+        computer();
       }, 1000);
     } else
-      setTimeout(function () {
-      hold();
-    }, 1000);
+      setTimeout(function() {
+        hold();
+      }, 1000);
   }
 }
 
@@ -88,7 +88,7 @@ function init() {
   document.getElementById('score-1').textContent = '0';
   document.getElementById('current-0').textContent = '0';
   document.getElementById('current-1').textContent = '0';
-  document.querySelector('#name-0').textContent = '🤔';
+  document.querySelector('#name-0').textContent = '🙂';
   document.querySelector('#name-1').textContent = '🤖';
   document.querySelector('.player-0-panel').classList.remove('winner');
   document.querySelector('.player-1-panel').classList.remove('winner');
@@ -118,26 +118,26 @@ function roll() {
     //Next player
     gamePlaying = 0;
     console.log("Doubles!");
-    if (activePlayer===0){
-      document.querySelector('#name-0').textContent ='😲';
+    if (activePlayer === 0) {
+      document.querySelector('#name-0').textContent = '😲';
     } else {
-      document.querySelector('#name-0').textContent ='😆';
-      document.querySelector('#name-1').textContent ='💥';
+      document.querySelector('#name-0').textContent = '😆';
+      document.querySelector('#name-1').textContent = '💥';
     }
 
 
-    setTimeout(function () {
-      gamePlaying=1;
-      document.querySelector('#name-0').textContent = '🤔';
+    setTimeout(function() {
+      gamePlaying = 1;
+      document.querySelector('#name-0').textContent = '🙂';
       document.querySelector('#name-1').textContent = '🤖';
       nextPlayer();
     }, 1000);
 
 
-  // } else if (rollList[0] + rollList[1] === 12) {
-  //   scores[activePlayer] = 0;
-  //   document.getElementById('score-' + activePlayer).textContent = '0';
-  //   nextPlayer();
+    // } else if (rollList[0] + rollList[1] === 12) {
+    //   scores[activePlayer] = 0;
+    //   document.getElementById('score-' + activePlayer).textContent = '0';
+    //   nextPlayer();
   } else {
     // add score
     roundScore += dice1 + dice2;
@@ -156,6 +156,8 @@ function hold() {
 
     //Check if player won
     if (scores[activePlayer] >= winningScore) {
+      document.querySelector('#name-0').textContent = '😭';
+      document.querySelector('#name-1').textContent = '💥';
       document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
       document.querySelector('.dice1').style.display = 'none';
       document.querySelector('.dice2').style.display = 'none';
@@ -168,6 +170,37 @@ function hold() {
     // ('.winner')
   }
 }
+
+function dontGiveMeFive(start, end) {
+  count = 0;
+  console.log("54".match(/5/g));
+  while (start <= end) {
+    if (start.toString().match(/5/g) === null) {
+      console.log(start);
+      count++;
+      start++;
+    }
+  }
+  return count;
+}
 //  = dice;
 // document.querySelector('#current-'+activePlayer).innerHTML = '<em>' + dice + '</em>';
 // var x = document.querySelector('#score-0').textContent;
+
+function order(words) {
+  words = words.split(" ");
+  sorted = [];
+  count = 1;
+  while (count < words.length + 1) {
+
+    for (var i = 0; i < words.length; i++) {
+
+      if (words[i].includes(count)) {
+        sorted.push(words[i]);
+      }
+    }
+    count++;
+  }
+
+  return sorted;
+}
