@@ -43,7 +43,7 @@ function wholesomeFamilyGame() {
 function intropy() {
   document.querySelector("p").innerHTML = `<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h3>Intropy</h3><br>Intropy is designed to help people to realize their longterm goals and to develop the habits necessary to achieve them.`;
 
-  document.querySelector(".btn").outerHTML = `<form class='form btn' autocomplete='off' onsubmit='createList()'><div class='form-group row'><label for='listName' class='col-sm-0 col-form-label'></label><div class='col-sm-6'><input type='text' class='form-control' id='inputName' placeholder='List Name'></div><div class='col-sm-6'><button type='submit' id='submitButton' class='btn btn-primary'>Create List</button></div></form>`;
+    document.querySelector(".btn").outerHTML = `<a href='intropy.instinite.com' class='btn btn-lg btn-secondary info'>Try it</a>`;
 }
 
 function createList() {
