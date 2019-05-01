@@ -41,9 +41,9 @@ function wholesomeFamilyGame() {
 }
 
 function intropy() {
-  document.querySelector("p").innerHTML = `<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h3>Intropy</h3><br>Intropy is designed to help people to realize their longterm goals and to develop the habits necessary to achieve them.`;
+  document.querySelector("p").innerHTML = `<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h3>Intropy</h3><br>Intropy is designed to help people realize their longterm goals and to develop the habits necessary to achieve them.`;
 
-    document.querySelector(".btn").outerHTML = `<a href='intropy.instinite.com' class='btn btn-lg btn-secondary info'>Try it</a>`;
+    document.querySelector(".btn").outerHTML = `<a href='https://intropy.instinite.com/' class='btn btn-lg btn-secondary info'>Try it</a>`;
 }
 
 function createList() {
