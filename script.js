@@ -40,8 +40,8 @@ function wholesomeFamilyGame() {
   document.querySelector(".btn").outerHTML = `<a href='Projects/Simon Game/index.html' class='btn btn-lg btn-secondary info'>Try it</a>`;
 }
 
-function toDoList() {
-  document.querySelector("p").innerHTML = `<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h3>TODO List</h3><br>An app that keeps track of things to do.`;
+function intropy() {
+  document.querySelector("p").innerHTML = `<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h3>Intropy</h3><br>Intropy is designed to help people to realize their longterm goals and to develop the habits necessary to achieve them.`;
 
   document.querySelector(".btn").outerHTML = `<form class='form btn' autocomplete='off' onsubmit='createList()'><div class='form-group row'><label for='listName' class='col-sm-0 col-form-label'></label><div class='col-sm-6'><input type='text' class='form-control' id='inputName' placeholder='List Name'></div><div class='col-sm-6'><button type='submit' id='submitButton' class='btn btn-primary'>Create List</button></div></form>`;
 }
@@ -56,17 +56,4 @@ function createList() {
 function openInNewTab(url) {
   var win = window.open(url, '_blank');
   win.focus();
-}
-
-function cakes(recipe, available) {
-  recipe = Object.entries(recipe);
-  var cakes = [];
-  for (i = 0; i < recipe.length; i++) {
-    cakes.push(Math.floor(available[recipe[i][0]] / recipe[i][1]));
-  }
-  if (Math.min(...cakes) === NaN) {
-    return 0;
-  } else {
-    return Math.min(...cakes);
-  };
 }
