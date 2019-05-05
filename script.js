@@ -5,7 +5,7 @@ function moreInfo() {
     `<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'>
     <br>
     <h3>ABOUT</h3><br>
-    In 2014, I registered the domain instinite.com. A <a href='https://en.wikipedia.org/wiki/Portmanteau'>portmanteau</a> of Infinite and Instant. It sounded cool in 2014. It was another time. In 2018 I quit my job and began studying Javascript. While I'm learning to code, I'll be using this site to catalog my projects. Who knows, something useful may come out of it some day. If you'd like to follow me on my quest to create something useful, click below and I'll be in touch.`;
+      I'll be using this site to catalog my projects. If you'd like to follow me on my quest to create something useful, click below and I'll be in touch.`;
 
   document.querySelector(".btn").outerHTML = `<a href='https://rocky-basin-83913.herokuapp.com/' class='btn btn-lg btn-secondary info'>Subscribe</a>`;
 }
@@ -41,7 +41,7 @@ function wholesomeFamilyGame() {
 }
 
 function intropy() {
-  document.querySelector("p").innerHTML = `<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h3>Intropy</h3><br>Intropy is designed to help people realize their longterm goals and to develop the habits necessary to achieve them.`;
+document.querySelector("p").innerHTML = `<img src='images/Logomark - Black.svg' width='50%' height='50%' class='logo'><br><h3>Intropy</h3><br>Intropy is designed to help people realize their longterm goals and to develop the habits necessary to achieve them. <br>Work in Progress.`;
 
     document.querySelector(".btn").outerHTML = `<a href='https://intropy.instinite.com/' class='btn btn-lg btn-secondary info'>Try it</a>`;
 }
