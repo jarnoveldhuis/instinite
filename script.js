@@ -63,3 +63,16 @@ function openInNewTab(url) {
   var win = window.open(url, '_blank');
   win.focus();
 }
+
+// // Schedule a function to run after 3 seconds (3000 milliseconds)
+// setTimeout(function() {
+//   // Get the 'content' div by its ID
+//   var contentDiv = document.getElementById("blink");
+
+//   // Create a new text node with the text you want to appear
+//   var newText = document.createTextNode("Rebuilding");
+
+//   // Append the new text node to the 'content' div
+//   contentDiv.appendChild(newText);
+// }, 3000); // 3000 milliseconds = 3 seconds
+
