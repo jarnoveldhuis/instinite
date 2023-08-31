@@ -6,6 +6,8 @@
   animation: blinker 3s linear infinite;
 }
 
+
+
 @keyframes blinker {
   50% {
     opacity: 0;
@@ -26,7 +28,8 @@
     color: rgba(255, 0, 0, 0.792);
     font-family: 'Monoton', cursive;
     padding-bottom: 0px;
-    font-size: 75px;
+    font-size: 350%;
+    /* text-size-adjust: 80%; */
   }
 
   input {
