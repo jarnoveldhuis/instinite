@@ -42,6 +42,7 @@ function wholesomeFamilyGame() {
 
 function intropy() {
 document.querySelector("p").innerHTML = `<img src='images/Intropy Logo - Alternate Layout - White.png' width='50%' height='50%' class='logo'>
+
 <p>The idea for Intropy stemmed from the book "Flow" by Mihaly Csikszentmihalyi and The Power of Habit by Charles Duhigg. In the past, I've found it challenging to feel fully engaged in whatever I'm doing.
 My mind begins to wander toward figuring out better ways to spend my time. This can be incredibly distracting and I can't always keep track of everything I want to accomplish which creates an unpleasant state of uncertainty. I've developed my own personal system for dealing with this, and I wanted to build something to help myself hold myself accountable and to help others to do the same.<p/>
 <p> Intropy does this by requesting that the user input their longterm goals before listing the habits they will need to accomplish daily in order to make the goal a reality. They will have access to a dropdown to select the urgency of the habit, it's challenge level, as well as the estimated average time to complete.</p>
