@@ -12,12 +12,12 @@
   margin: 0 auto;
 }
 
-.opaque {
+/* .opaque {
   opacity: 0;
 }
 .blink {
   animation: blinker 3s linear infinite;
-}
+} */
 
 
 
@@ -93,9 +93,9 @@
     line-height: 10px;
   }
 
-  .title {
+  /* .title {
     margin-bottom: 100px;
-  }
+  } */
 
   .project {
     font-size: 50px;

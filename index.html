@@ -53,17 +53,92 @@
         </nav>
       </div> -->
     </header>
+    <style>
 
+
+      .card {
+
+        /* Improved readability */
+        color: black;
+        /* Font color set to black */
+        width: 100%;
+        /* Utilize full column width */
+        margin-bottom: 20px;
+        /* Add bottom margin for spacing */
+      }
+
+      .card-body {
+        /* padding: 30px; */
+      }
+
+      .card a {
+        color: black;
+        /* Change the link color to black */
+      }
+
+      .card a:hover {
+        color: gray;
+        /* Change the link color to gray on hover */
+      }
+
+      .img-wrap {
+        position: relative;
+        width: 100%;
+        /* keep the full width */
+        padding-bottom: 100%;
+        /* maintain square aspect ratio */
+        overflow: hidden;
+      }
+
+      .card-img-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* ensure the image covers the square area */
+        height: 100%;
+        /* ensure the image covers the square area */
+        object-fit: cover;
+        /* cover the area without distorting the image */
+      }
+    </style>
     <main role="main" class="inner cover">
+
       <div class="content-wrapper">
         <img class="cover-logo cover-heading" src="images/instinite.gif" alt="instinite logo">
-        
+
 
         <h1 class="opaque" id="blink">
-          Rebuilding
+          My Projects
           <!-- <h1>Rebuilding </h1> -->
           <!-- <a href=# onClick="moreInfo()" class="btn link btn-lg btn-secondary info">More Info</a> -->
         </h1>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <a href="https://www.ego-proxy.com">
+              <div class="img-wrap">
+                <img class="card-img-top" src="ego-proxy.png" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Ego-Proxy</h5>
+                <p class="card-text">Generate multi-purpose chatbots (or "Proxies") with custom personalities and shareable URLs.</p>
+              </div>
+              </a>  
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card">
+              <div class="img-wrap">
+                <img class="card-img-top" src="more.webp" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Future Projects</h5>
+                <p class="card-text">I'm going to keep building stuff.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
     </main>
@@ -75,16 +150,13 @@
   </div>
 </body>
 
-  <script src="script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
 
