@@ -1,164 +1,171 @@
 <!DOCTYPE html>
-<!-- saved from url=(0049)https://getbootstrap.com/docs/4.2/examples/cover/ -->
-<html lang="en" class="gr__getbootstrap_com">
-
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Jekyll v3.8.5">
-  <title>Instinite</title>
+  <meta name="description" content="Portfolio showcasing ego-proxy.com and value-balance projects">
+  <meta name="author" content="Jarno Veldhuis">
+  <title>Portfolio | ego-proxy.com & value-balance</title>
 
-  <!-- Bootstrap core CSS -->
   <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <!-- <link rel="stylesheet" href="css/styles.css" /> -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="CSS/styles.css" type="text/css" />
 
   <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #000000;
     }
 
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
+    .cover-logo {
+      font-family: 'Monoton', cursive;
+      font-size: 4rem;
+      margin-bottom: 2rem;
     }
+
+    .project-card {
+      background: #111111;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+      margin-bottom: 30px; /* Keeps spacing between rows if they wrap */
+      overflow: hidden;
+      display: flex; /* Make the card a flex container */
+      flex-direction: column; /* Stack image and content vertically */
+      height: 100%; /* Make the card fill the column height */
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-image {
+      width: 100%;
+      height: 250px; /* Fixed height for consistent image area */
+      object-fit: cover;
+    }
+
+    .project-content {
+      padding: 25px;
+      display: flex; /* Make content area a flex container */
+      flex-direction: column; /* Stack title, description, button vertically */
+      flex-grow: 1; /* Allow content to grow and push button to bottom */
+    }
+
+    .project-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .project-description {
+      color: #cccccc;
+      line-height: 1.6;
+      flex-grow: 1; /* Allow description to take up available space, pushing button down */
+      margin-bottom: 20px; /* Ensure some space before the button */
+    }
+
+    .btn-primary {
+      background-color: #000000;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 500;
+      margin-top: auto; /* Pushes button to the bottom of the flex container (.project-content) */
+    }
+
+    .btn-primary:hover {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    .hero-section {
+      padding: 40px 0;
+      background: #000000;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    .hero-title {
+      margin-bottom: 20px;
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-subtitle {
+      font-family: 'Monoton', cursive;
+      font-size: 1.8rem;
+      opacity: 0.9;
+      margin-bottom: 30px;
+    }
+    
+    /* Ensure Bootstrap row behaves as expected for equal height columns */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .col-md-6 {
+      display: flex; /* Ensures columns themselves can participate in flex sizing if needed */
+      flex-direction: column; /* Stack content within column */
+    }
+
   </style>
-  <!-- Custom styles for this template -->
-  <link href="./Cover Template · Bootstrap_files/cover.css" rel="stylesheet">
-  <link rel="stylesheet" href="CSS/styles.css" type="text/css" />
 </head>
 
-<body class="text-center" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-      <!-- <div class="inner">
-        <h3 class="masthead-brand"></h3>
-        <nav class="nav nav-masthead justify-content-center">
-
-          <a class="nav-link active" href="">Home</a>
-
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown03">
-            <a class="dropdown-item" href=# onClick="intropy()">Intropy</a>
-          </div>
-
-        </nav>
-      </div> -->
-    </header>
-    <style>
-
-
-      .card {
-
-        /* Improved readability */
-        color: black;
-        /* Font color set to black */
-        width: 100%;
-        /* Utilize full column width */
-        margin-bottom: 20px;
-        /* Add bottom margin for spacing */
-      }
-
-      .card-body {
-        /* padding: 30px; */
-      }
-
-      .card a {
-        color: black;
-        /* Change the link color to black */
-      }
-
-      .card a:hover {
-        color: gray;
-        /* Change the link color to gray on hover */
-      }
-
-      .img-wrap {
-        position: relative;
-        width: 100%;
-        /* keep the full width */
-        padding-bottom: 100%;
-        /* maintain square aspect ratio */
-        overflow: hidden;
-      }
-
-      .card-img-top {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        /* ensure the image covers the square area */
-        height: 100%;
-        /* ensure the image covers the square area */
-        object-fit: cover;
-        /* cover the area without distorting the image */
-      }
-    </style>
-    <main role="main" class="inner cover">
-
-      <div class="content-wrapper">
-        <img class="cover-logo cover-heading" src="images/instinite.gif" alt="instinite logo">
-
-
-        <h1 class="opaque" id="blink">
-          Rebuilding
-          <!-- <a href=# onClick="moreInfo()" class="btn link btn-lg btn-secondary info">More Info</a> -->
-        </h1>
-
+<body>
+  <div class="container-fluid p-0">
+    <section class="hero-section text-center">
+      <div class="container">
+        <img src="images/instiniteLogo.png" alt="Instinite" class="hero-title">
       </div>
+    </section>
 
-    </main>
-    <!-- <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <a href="https://www.ego-proxy.com">
-          <div class="img-wrap">
-            <img class="card-img-top" src="ego-proxy.png" alt="Card image cap">
+    <section class="container py-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="project-card">
+            <img src="ego-proxy.png" alt="Ego-Proxy Project" class="project-image">
+            <div class="project-content">
+              <h2 class="project-title">Ego-Proxy</h2>
+              <p class="project-description">
+                A revolutionary platform for creating and sharing AI-powered chatbots with custom personalities. 
+                Generate multi-purpose proxies that can be easily shared and integrated into various applications.
+              </p>
+              <a href="https://www.ego-proxy.com" class="btn btn-primary" target="_blank">Visit Project</a>
+            </div>
           </div>
-          <div class="card-body">
-            <h5 class="card-title">Ego-Proxy</h5>
-            <p class="card-text">Generate multi-purpose chatbots (or "Proxies") with custom personalities and shareable URLs.</p>
-          </div>
-          </a>  
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <div class="img-wrap">
-            <img class="card-img-top" src="more.webp" alt="Card image cap">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">Future Projects</h5>
-            <p class="card-text">Coming eventually</p>
+
+        <div class="col-md-6">
+          <div class="project-card">
+            <img src="images/valueLogo.png" alt="Value-Balance Project" class="project-image">
+            <div class="project-content">
+              <h2 class="project-title">Value-Balance</h2>
+              <p class="project-description">
+                Track the ethical impact of your spending and uncover your 'societal debt.' Value-Balance then suggests top-rated charities, helping you offset this impact and align financial decisions with your values.
+              </p>
+              <a href="https://mordebt.vercel.app/" class="btn btn-primary" target="_blank">Visit Project</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>  -->
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-        <p>© 2019 Jarno Veldhuis.</p>
+    </section>
+
+    <footer class="bg-dark text-white py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">© 2024 Jarno Veldhuis. All rights reserved.</p>
       </div>
     </footer>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 </body>
-
-<script src="script.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-
-
 </html>
