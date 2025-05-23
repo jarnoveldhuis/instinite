@@ -1,171 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Portfolio showcasing ego-proxy.com and value-balance projects">
-  <meta name="author" content="Jarno Veldhuis">
-  <title>Portfolio | ego-proxy.com & value-balance</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="Portfolio showcasing ego-proxy.com and value-balance projects"
+    />
+    <meta name="author" content="Jarno Veldhuis" />
+    <title>Portfolio | ego-proxy.com & value-balance</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="CSS/styles.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Monoton"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="CSS/styles.css" type="text/css" />
 
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #000000;
-    }
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #000000;
+      }
 
-    .cover-logo {
-      font-family: 'Monoton', cursive;
-      font-size: 4rem;
-      margin-bottom: 2rem;
-    }
+      .cover-logo {
+        font-family: "Monoton", cursive;
+        font-size: 4rem;
+        margin-bottom: 2rem;
+      }
 
-    .project-card {
-      background: #111111;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-      transition: transform 0.3s ease;
-      margin-bottom: 30px; /* Keeps spacing between rows if they wrap */
-      overflow: hidden;
-      display: flex; /* Make the card a flex container */
-      flex-direction: column; /* Stack image and content vertically */
-      height: 100%; /* Make the card fill the column height */
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
+      .project-card {
+        background: #111111;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease;
+        margin-bottom: 30px; /* Keeps spacing between rows if they wrap */
+        overflow: hidden;
+        display: flex; /* Make the card a flex container */
+        flex-direction: column; /* Stack image and content vertically */
+        height: 100%; /* Make the card fill the column height */
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
 
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
+      .project-card:hover {
+        transform: translateY(-5px);
+      }
 
-    .project-image {
-      width: 100%;
-      height: 250px; /* Fixed height for consistent image area */
-      object-fit: cover;
-    }
+      .project-image {
+        width: 100%;
+        height: 250px;
+        object-fit: contain; /* Changed from cover to contain */
+      }
 
-    .project-content {
-      padding: 25px;
-      display: flex; /* Make content area a flex container */
-      flex-direction: column; /* Stack title, description, button vertically */
-      flex-grow: 1; /* Allow content to grow and push button to bottom */
-    }
+      .project-content {
+        padding: 2px;
+        display: flex; /* Make content area a flex container */
+        flex-direction: column; /* Stack title, description, button vertically */
+        flex-grow: 1; /* Allow content to grow and push button to bottom */
+      }
 
-    .project-title {
-      font-size: 1.5rem;
-      font-weight: 600;
-      margin-bottom: 15px;
-      color: #ffffff;
-    }
+      .project-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: #ffffff;
+      }
 
-    .project-description {
-      color: #cccccc;
-      line-height: 1.6;
-      flex-grow: 1; /* Allow description to take up available space, pushing button down */
-      margin-bottom: 20px; /* Ensure some space before the button */
-    }
+      .project-description {
+        color: #cccccc;
+        line-height: 1.6;
+        flex-grow: 1; /* Allow description to take up available space, pushing button down */
+        margin-bottom: 20px; /* Ensure some space before the button */
+      }
 
-    .btn-primary {
-      background-color: #000000;
-      border: 1px solid #ffffff;
-      color: #ffffff;
-      padding: 10px 20px;
-      border-radius: 6px;
-      font-weight: 500;
-      margin-top: auto; /* Pushes button to the bottom of the flex container (.project-content) */
-    }
+      .btn-primary {
+        background-color: #000000;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-weight: 500;
+        margin-top: auto; /* Pushes button to the bottom of the flex container (.project-content) */
+      }
 
-    .btn-primary:hover {
-      background-color: #ffffff;
-      color: #000000;
-    }
+      .btn-primary:hover {
+        background-color: #ffffff;
+        color: #000000;
+      }
 
-    .hero-section {
-      padding: 40px 0;
-      background: #000000;
-      color: white;
-      margin-bottom: 40px;
-    }
+      .hero-section {
+        padding: 0px 0;
+        background: #000000;
+        color: white;
+        margin-bottom: 0px; /* Adjusted value */
+      }
 
-    .hero-title {
-      margin-bottom: 20px;
-      max-width: 300px;
-      width: 100%;
-      height: auto;
-    }
+      .hero-title {
+        margin-bottom: 20px;
+        max-width: 300px;
+        width: 100%;
+        height: auto;
+      }
 
-    .hero-subtitle {
-      font-family: 'Monoton', cursive;
-      font-size: 1.8rem;
-      opacity: 0.9;
-      margin-bottom: 30px;
-    }
-    
-    /* Ensure Bootstrap row behaves as expected for equal height columns */
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .col-md-6 {
-      display: flex; /* Ensures columns themselves can participate in flex sizing if needed */
-      flex-direction: column; /* Stack content within column */
-    }
+      .hero-subtitle {
+        font-family: "Monoton", cursive;
+        font-size: 1.8rem;
+        opacity: 0.9;
+        margin-bottom: 30px;
+      }
 
-  </style>
-</head>
+      /* Ensure Bootstrap row behaves as expected for equal height columns */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .col-md-6 {
+        display: flex; /* Ensures columns themselves can participate in flex sizing if needed */
+        flex-direction: column; /* Stack content within column */
+      }
+    </style>
+  </head>
 
-<body>
-  <div class="container-fluid p-0">
-    <section class="hero-section text-center">
-      <div class="container">
-        <img src="images/instiniteLogo.png" alt="Instinite" class="hero-title">
-      </div>
-    </section>
+  <body>
+    <div class="container-fluid p-0">
+      <section class="hero-section text-center">
+        <div class="container">
+          <img
+            src="images/instinite.gif"
+            alt="Instinite"
+            class="hero-title"
+          />
+        </div>
+      </section>
 
-    <section class="container py-5">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="project-card">
-            <img src="ego-proxy.png" alt="Ego-Proxy Project" class="project-image">
-            <div class="project-content">
-              <h2 class="project-title">Ego-Proxy</h2>
-              <p class="project-description">
-                A revolutionary platform for creating and sharing AI-powered chatbots with custom personalities. 
-                Generate multi-purpose proxies that can be easily shared and integrated into various applications.
-              </p>
-              <a href="https://ego-proxy.com" class="btn btn-primary" target="_blank">Visit Project</a>
+      <section class="container py-0">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="project-card">
+              <img
+                src="ego-proxy.png"
+                alt="Ego-Proxy Project"
+                class="project-image"
+              />
+              <div class="project-content">
+                <h2 class="project-title">Ego-Proxy</h2>
+                <p class="project-description">
+                  Upload a photo to instantly generate emotionally expressive
+                  chatbots that can be easily shared and integrated into various
+                  applications.
+                </p>
+                <a
+                  href="https://ego-proxy.com"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Visit Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="project-card">
+              <img
+                src="images/valueLogo.png"
+                alt="Value-Balance Project"
+                class="project-image"
+              />
+              <div class="project-content">
+                <h2 class="project-title">Value-Balance</h2>
+                <p class="project-description">
+                  Track the ethical impact of your spending and uncover your
+                  'societal debt.' Value-Balance then suggests top-rated
+                  charities, helping you offset this impact and align financial
+                  decisions with your values.
+                </p>
+                <a
+                  href="https://mordebt.vercel.app/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >Visit Project</a
+                >
+              </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="col-md-6">
-          <div class="project-card">
-            <img src="images/valueLogo.png" alt="Value-Balance Project" class="project-image">
-            <div class="project-content">
-              <h2 class="project-title">Value-Balance</h2>
-              <p class="project-description">
-                Track the ethical impact of your spending and uncover your 'societal debt.' Value-Balance then suggests top-rated charities, helping you offset this impact and align financial decisions with your values.
-              </p>
-              <a href="https://mordebt.vercel.app/" class="btn btn-primary" target="_blank">Visit Project</a>
-            </div>
-          </div>
+      <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+          <p class="mb-0">© 2024 Jarno Veldhuis. All rights reserved.</p>
         </div>
-      </div>
-    </section>
+      </footer>
+    </div>
 
-    <footer class="bg-dark text-white py-4 mt-5">
-      <div class="container text-center">
-        <p class="mb-0">© 2024 Jarno Veldhuis. All rights reserved.</p>
-      </div>
-    </footer>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
-</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
